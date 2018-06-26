@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee
+   http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+  version="2.4">
+
+  <servlet>
+    <servlet-name>GetServerToken</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.GetServerToken</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegistBot</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.RegistBot</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SndBotMsg</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.SndBotMsg</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SndBotMsgFromCsv</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.SndBotMsgFromCsv</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegistBot2Domain</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.RegistBot2Domain</servlet-class>
+  </servlet>
+
+  <!-- Drive -->
+  <servlet>
+    <servlet-name>FileUpload</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.drive.FileUpload</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetUserInfo</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.drive.GetUserInfo</servlet-class>
+  </servlet>
+
+
+  <!-- OAuth -->
+  <servlet>
+    <servlet-name>Token</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.oauth.GetToken</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetCode</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.oauth.GetCode</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>CheckDomainValidity</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.partner.CheckDomainValidity</servlet-class>
+  </servlet>
+
+  <!-- Contact -->
+  <servlet>
+    <servlet-name>AddPrivateContact</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.contact.AddPrivateContact</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>EnableLINE</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.contact.EnableLINE</servlet-class>
+  </servlet>
+
+  <!-- Org -->
+  <servlet>
+    <servlet-name>DeleteOrg</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.org.DeleteOrg</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateOrg</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.org.UpdateOrg</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegistOrg</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.org.RegistOrg</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetOrg</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.org.GetOrg</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MoveOrg</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.org.MoveOrg</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RegistSubMail</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.org.RegistSubMail</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetSubMail</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.org.GetSubMail</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DeleteSubMail</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.org.DeleteSubMail</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetContact</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.org.GetContact</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddLevels</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.org.AddLevels</servlet-class>
+  </servlet>
+  <!-- ********** V3 ********** -->
+  <servlet>
+    <servlet-name>RegistBotMenu</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.v3.bot.RegistBotMenu</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SndBotMsgV3</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.v3.bot.SndBotMsgV3</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>BotSign</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.bot.Sign</servlet-class>
+  </servlet>
+  <!-- Audit -->
+  <servlet>
+    <servlet-name>UtilTool</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.UtilTool</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CreateSchedule</servlet-name>
+    <servlet-class>jp.co.atraente.green.lw.testap.servlet.calender.CreateSchedule</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>GetServerToken</servlet-name>
+    <url-pattern>/getServerToken</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegistBot</servlet-name>
+    <url-pattern>/registBot</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SndBotMsg</servlet-name>
+    <url-pattern>/sndBotMsg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SndBotMsgFromCsv</servlet-name>
+    <url-pattern>/sndBotMsgFromCsv</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegistBot2Domain</servlet-name>
+    <url-pattern>/registBot2Domain</url-pattern>
+  </servlet-mapping>
+
+  <!-- Drive -->
+  <servlet-mapping>
+    <servlet-name>FileUpload</servlet-name>
+    <url-pattern>/fileUpload</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUserInfo</servlet-name>
+    <url-pattern>/getUserInfo</url-pattern>
+  </servlet-mapping>
+
+  <!-- OAuth -->
+  <servlet-mapping>
+    <servlet-name>Token</servlet-name>
+    <url-pattern>/token</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetCode</servlet-name>
+    <url-pattern>/getCode</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- Contact -->
+  <servlet-mapping>
+    <servlet-name>AddPrivateContact</servlet-name>
+    <url-pattern>/addPrivateContact</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EnableLINE</servlet-name>
+    <url-pattern>/enableLine</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>CheckDomainValidity</servlet-name>
+    <url-pattern>/checkDomain</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- Org -->
+  <servlet-mapping>
+    <servlet-name>DeleteOrg</servlet-name>
+    <url-pattern>/deleteOrg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateOrg</servlet-name>
+    <url-pattern>/updateOrg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegistOrg</servlet-name>
+    <url-pattern>/registOrg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetOrg</servlet-name>
+    <url-pattern>/getOrg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MoveOrg</servlet-name>
+    <url-pattern>/moveOrg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegistSubMail</servlet-name>
+    <url-pattern>/registSubMail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSubMail</servlet-name>
+    <url-pattern>/getSubMail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteSubMail</servlet-name>
+    <url-pattern>/deleteSubMail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetContact</servlet-name>
+    <url-pattern>/getContact</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddLevels</servlet-name>
+    <url-pattern>/addLevels</url-pattern>
+  </servlet-mapping>
+
+  <!-- ********** V3 ********** -->
+  <servlet-mapping>
+    <servlet-name>RegistBotMenu</servlet-name>
+    <url-pattern>/v3/registBotMenu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SndBotMsgV3</servlet-name>
+    <url-pattern>/v3/sndBotMsg</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BotSign</servlet-name>
+    <url-pattern>/botSign</url-pattern>
+  </servlet-mapping>
+
+
+  <!-- Audit -->
+  <servlet-mapping>
+    <servlet-name>UtilTool</servlet-name>
+    <url-pattern>/utilTool</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateSchedule</servlet-name>
+    <url-pattern>/createSchedule</url-pattern>
+  </servlet-mapping>
+
+</web-app>
